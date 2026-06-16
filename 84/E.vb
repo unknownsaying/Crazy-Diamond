@@ -95,7 +95,7 @@ Sub tRNA
    RemoveHandler
 End Sub 
 Sub rRNA
-    CSByte CShort CSng CStr
+    CByte CShort CSng CStr
 End Sub
 End Class
 End Structure

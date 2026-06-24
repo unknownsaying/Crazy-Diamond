@@ -113,7 +113,10 @@ Module FractalEnum
             If c = "F" Then
                 Dim nx = x + Cos(angle) * 2
                 Dim ny = y + Sin(angle) * 1.5
-                Try : Console.SetCursorPosition(CInt(nx), CInt(ny)) : Console.Write("*") : Catch : End Try
+                Try : Console.SetCursorPosition(CInt(nx), CInt(ny)) : 
+                      Console.Write("*") 
+                    Catch 
+                End Try
                 x = nx : y = ny
             ElseIf c = "+" Then
                 angle += PI / 3
